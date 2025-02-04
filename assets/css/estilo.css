@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(hwb(211 79% 1%), hsl(212, 84%, 75%), hsl(212, 90%, 54%));
+    height: 100vh;
+}
+
+#imagen {
+    padding: 1rem;
+    background-color: beige;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px rgb(255, 0, 0) dotted;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+section {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 200px;
+    border-radius: 50%;
+    border: 3px dotted rgb(172, 0, 224);
+}
+
+.card:hover {
+    background-color: rgba(218, 243, 104, 0.8);
+}
+
+.card:active {
+    background-color: rgba(81, 236, 247, 0.8);
+}
+
+.card>img {
+    width: 100px;
+}
+
+
+#visual {
+    margin: 1rem;
+    width: 400px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    translate: -5rem;
+
+}
+
+#visual>img {
+    width: 100%;
+    height: 15rem;
+
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.show-time {
+    width: 400px;
+    padding: 8rem;
+    /* animation: fade 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
